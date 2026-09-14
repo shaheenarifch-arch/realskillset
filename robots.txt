@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realskillset.com/sitemap.xml
+Sitemap: https://www.realskillset.com/sitemap.xml
