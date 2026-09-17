@@ -9,19 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0B0F1A;--panel:#121A2B;--panel2:#161E32;--line:rgba(255,255,255,0.08);--text:#E7EAF3;--dim:#8B93A7;--violet:#7C5CFF;--cyan:#22D3EE;--grad:linear-gradient(120deg,var(--violet),var(--cyan));--success:#34D399;--warning:#FBBF24;--danger:#F87171}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6}.wrap{max-width:1160px;margin:0 auto;padding:0 28px}.mono{font-family:JetBrains Mono,monospace}.btn{background:var(--grad);color:#0B0F1A;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-family:Space Grotesk;display:inline-flex;gap:8px;border:none;cursor:pointer;align-items:center;justify-content:center;transition:.2s}.btn:hover{filter:brightness(1.04)}.btn-ghost{background:rgba(255,255,255,0.06);border:1px solid var(--line);color:var(--text);padding:12px 18px;border-radius:10px;text-decoration:none}header{position:sticky;top:0;z-index:40;background:rgba(11,15,26,0.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 0}.blog-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;cursor:pointer;transition:.2s}.blog-card:hover{border-color:var(--violet);background:var(--panel2);transform:translateY(-2px)}.blog-full{display:none;margin-top:14px;color:var(--dim);font-size:0.92rem;line-height:1.8;white-space:pre-wrap;border-top:1px solid var(--line);padding-top:14px}.blog-full.open{display:block}.badge{display:inline-flex;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.25);color:var(--cyan);font-family:JetBrains Mono;font-size:0.7rem;padding:4px 8px;border-radius:6px}
-.hero{position:relative;isolation:isolate;min-height:760px;display:flex;align-items:center;overflow:hidden;background:#090d17}
-.hero-media{position:absolute;inset:0;z-index:-2}
-.hero-media img{width:100%;height:100%;object-fit:cover;filter:saturate(1.1) contrast(1.12) brightness(.72)}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,10,18,0.9) 0%,rgba(6,10,18,0.72) 28%,rgba(6,10,18,0.28) 55%,rgba(6,10,18,0.7) 100%),linear-gradient(180deg,rgba(6,10,18,0.4),rgba(6,10,18,0.75));}
-.hero-inner{position:relative;z-index:1;padding-top:90px;padding-bottom:90px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center}
-.hero-copy{max-width:620px}
-.eyebrow{display:inline-block;color:#22D3EE;font-size:0.75rem;letter-spacing:0.18em;font-family:JetBrains Mono,monospace;margin-bottom:18px;text-transform:uppercase}
-h1{font-family:Space Grotesk,sans-serif;font-size:clamp(2.8rem,5vw,5rem);line-height:0.96;letter-spacing:-0.06em;margin:0 0 18px}.hero-copy p{margin:0 0 24px;color:rgba(231,234,243,0.8);font-size:1.08rem;max-width:56ch}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}.hero-stats{display:flex;gap:28px;flex-wrap:wrap}.stat-label{display:block;color:var(--dim);font-size:0.7rem;letter-spacing:0.12em;font-family:JetBrains Mono,monospace;margin-bottom:6px}.stat-value{font-family:Space Grotesk,sans-serif;font-size:1.7rem;letter-spacing:-0.05em}.hero-panel{justify-self:end;width:min(100%, 470px);background:rgba(12,16,26,0.5);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(10px);border-radius:24px;padding:22px;box-shadow:0 24px 80px rgba(0,0,0,0.42)}
-.panel-tag{display:inline-flex;padding:6px 10px;border-radius:999px;background:rgba(34,211,238,0.12);border:1px solid rgba(34,211,238,0.25);color:#a5f3fc;font-size:0.7rem;letter-spacing:0.12em;font-family:JetBrains Mono,monospace;text-transform:uppercase}
-.hero-panel h2{font-family:Space Grotesk,sans-serif;font-size:1.8rem;letter-spacing:-0.04em;margin:18px 0 10px}.hero-panel p{margin:0;color:rgba(231,234,243,0.75);line-height:1.7}.small-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}.small-list li{display:flex;gap:12px;align-items:flex-start;color:rgba(231,234,243,0.85)}.dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(120deg,var(--cyan),var(--violet));margin-top:7px;box-shadow:0 0 16px rgba(124,92,255,0.75)}
-@media (max-width: 900px){.hero{min-height:unset}.hero-inner{grid-template-columns:1fr;padding-top:70px;padding-bottom:70px}.hero-panel{justify-self:start}.}
-@media (max-width: 560px){.hero-copy h1{font-size:2.8rem}.hero-panel{padding:18px}.hero-stats{gap:18px}.}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6}.wrap{max-width:1160px;margin:0 auto;padding:0 28px}.mono{font-family:JetBrains Mono,monospace}.btn{background:var(--grad);color:#0B0F1A;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-family:Space Grotesk;display:inline-flex;gap:8px;border:none;cursor:pointer;align-items:center;justify-content:center;transition:.2s}.btn:hover{filter:brightness(1.04)}.btn-ghost{background:rgba(255,255,255,0.06);border:1px solid var(--line);color:var(--text);padding:12px 18px;border-radius:10px;text-decoration:none}header{position:sticky;top:0;z-index:40;background:rgba(11,15,26,0.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 0}.blog-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;cursor:pointer;transition:.2s}.blog-card:hover{border-color:var(--violet);background:var(--panel2);transform:translateY(-2px)}.blog-full{display:none;margin-top:14px;color:var(--dim);font-size:0.92rem;line-height:1.8;white-space:pre-wrap;border-top:1px solid var(--line);padding-top:14px}.blog-full.open{display:block}.badge{display:inline-flex;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.25);color:var(--cyan);font-family:JetBrains Mono;font-size:0.7rem;padding:4px 8px;border-radius:6px}.blog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:26px}.blog-grid .blog-card{min-height:220px}.hero{position:relative;isolation:isolate;min-height:760px;display:flex;align-items:center;overflow:hidden;background:#090d17}.hero-media{position:absolute;inset:0;z-index:-2}.hero-media img{width:100%;height:100%;object-fit:cover;filter:saturate(1.1) contrast(1.12) brightness(.72)}.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,10,18,0.9) 0%,rgba(6,10,18,0.72) 28%,rgba(6,10,18,0.28) 55%,rgba(6,10,18,0.7) 100%),linear-gradient(180deg,rgba(6,10,18,0.4),rgba(6,10,18,0.75));}.hero-inner{position:relative;z-index:1;padding-top:90px;padding-bottom:90px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center}.hero-copy{max-width:620px}.eyebrow{display:inline-block;color:#22D3EE;font-size:0.75rem;letter-spacing:0.18em;font-family:JetBrains Mono,monospace;margin-bottom:18px;text-transform:uppercase}h1{font-family:Space Grotesk,sans-serif;font-size:clamp(2.8rem,5vw,5rem);line-height:0.96;letter-spacing:-0.06em;margin:0 0 18px}.hero-copy p{margin:0 0 24px;color:rgba(231,234,243,0.8);font-size:1.08rem;max-width:56ch}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}.hero-stats{display:flex;gap:28px;flex-wrap:wrap}.stat-label{display:block;color:var(--dim);font-size:0.7rem;letter-spacing:0.12em;font-family:JetBrains Mono,monospace;margin-bottom:6px}.stat-value{font-family:Space Grotesk,sans-serif;font-size:1.7rem;letter-spacing:-0.05em}.hero-panel{justify-self:end;width:min(100%, 470px);background:rgba(12,16,26,0.5);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(10px);border-radius:24px;padding:22px;box-shadow:0 24px 80px rgba(0,0,0,0.42)}.panel-tag{display:inline-flex;padding:6px 10px;border-radius:999px;background:rgba(34,211,238,0.12);border:1px solid rgba(34,211,238,0.25);color:#a5f3fc;font-size:0.7rem;letter-spacing:0.12em;font-family:JetBrains Mono,monospace;text-transform:uppercase}.hero-panel h2{font-family:Space Grotesk,sans-serif;font-size:1.8rem;letter-spacing:-0.04em;margin:18px 0 10px}.hero-panel p{margin:0;color:rgba(231,234,243,0.75);line-height:1.7}.small-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}.small-list li{display:flex;gap:12px;align-items:flex-start;color:rgba(231,234,243,0.85)}.dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(120deg,var(--cyan),var(--violet));margin-top:7px;box-shadow:0 0 16px rgba(124,92,255,0.75)}@media (max-width: 900px){.hero{min-height:unset}.hero-inner{grid-template-columns:1fr;padding-top:70px;padding-bottom:70px}.hero-panel{justify-self:start}.blog-grid{grid-template-columns:1fr}.}@media (max-width: 560px){.hero-copy h1{font-size:2.8rem}.hero-panel{padding:18px}.hero-stats{gap:18px}.}
 </style>
 </head>
 <body>
@@ -78,14 +66,17 @@ h1{font-family:Space Grotesk,sans-serif;font-size:clamp(2.8rem,5vw,5rem);line-he
     </div>
   </section>
 
-  <section id="blogs" style="padding:50px 0"><div class="wrap"><h2 style="font-family:Space Grotesk;font-size:1.8rem">10 guides — clean cards, 2000+ words inside</h2><p style="color:var(--dim)">Clean comparisons, practical savings, and no-nonsense advice for free learning in 2026.</p>
-
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 01 · COST</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Is Alison Really Free? Complete Cost Breakdown 2026</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Every lesson free, certificates $23-$50 only if you want paper. No card to start.</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Alison has been free since 2007. You get immediate access to every lesson, video, reading, and assessment without entering a credit card. No free trial expires. Browse 6,000+ courses and start learning within minutes.
+  <section id="blogs" style="padding:50px 0">
+    <div class="wrap">
+      <h2 style="font-family:Space Grotesk;font-size:1.8rem;line-height:1.1;margin:0">10 guides — clean cards, 2000+ words inside</h2>
+      <p style="color:var(--dim);margin:18px 0 0;">Clean comparisons, practical savings, and no-nonsense advice for free learning in 2026.</p>
+      <div class="blog-grid">
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 01 · COST</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Is Alison Really Free? Complete Cost Breakdown 2026</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Every lesson free, certificates $23-$50 only if you want paper. No card to start.</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Alison has been free since 2007. You get immediate access to every lesson, video, reading, and assessment without entering a credit card. No free trial expires. Browse 6,000+ courses and start learning within minutes.
 
 Revenue: ads + certificates. Option 1: learner record free. Option 2: digital cert $23-$40. Option 3: printed diploma $50-$150. Learning free, proof paid.
 
@@ -102,14 +93,14 @@ Expanded: Alison's model is ad-supported freemium. Website shows display ads non
 For job seekers: Complete 3-5 foundational free, test teaching style, buy certs for top 2 relevant. Support independent guides like RealSkillSet via affiliate link at no extra cost.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 02 · COMPARISON</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Alison vs Coursera vs Udemy vs edX: Which Wins in 2026?</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Free means different things. Alison: full course free. Coursera: audit only.</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Catalogue: Alison 6k, Coursera 7k many paid, Udemy 220k quality varies, edX 3.5k university.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 02 · COMPARISON</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Alison vs Coursera vs Udemy vs edX: Which Wins in 2026?</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Free means different things. Alison: full course free. Coursera: audit only.</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Catalogue: Alison 6k, Coursera 7k many paid, Udemy 220k quality varies, edX 3.5k university.
 
 True cost to complete: Alison Diploma IT Management $0 + learner record. Coursera IBM Data Science $49/mo x6 = $294 graded labs locked. Udemy free courses lead magnets for $19.99 advanced. edX Harvard MicroMasters start at $1,500+.
 
@@ -128,14 +119,14 @@ Affiliate support: Using links like RealSkillSet AWIN MID 120101 supports indepe
 If budget truly zero, Alison winner. If budget $200-300 and want one prestigious university name, add one Coursera/edX cert on top of free Alison base. Avoid paying Udemy unless very specific tool or course.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 03 · JOBS</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Are Alison Certificates Worth It for Jobs in 2026? Recruiter Insights</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Not a degree, but 3 functions: ATS keywords, CPD hours, proof of initiative.</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Interviewed 12 recruiters US UK India early 2026, 400 job postings mention CPD.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 03 · JOBS</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Are Alison Certificates Worth It for Jobs in 2026? Recruiter Insights</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Not a degree, but 3 functions: ATS keywords, CPD hours, proof of initiative.</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Interviewed 12 recruiters US UK India early 2026, 400 job postings mention CPD.
 
 Alison not university degree. No employer hires solely because Alison diploma Business Management. However 3 specific functions worth $25-$50.
 
@@ -158,79 +149,80 @@ Bottom line recruiters: Alison alone won't get job, but Alison + tailored CV + s
 If goal job in 90 days, pick one job title, find 5 required skills from ads, complete 5 Alison courses free, buy 2 certificates most important skills, build 2 small projects. Fastest path seen without burnout.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 04</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 4 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 4...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 4 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 04</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 4 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 4...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 4 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 05</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 5 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 5...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 5 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 05</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 5 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 5...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 5 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 06</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 6 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 6...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 6 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 06</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 6 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 6...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 6 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 07</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 7 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 7...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 7 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 07</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 7 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 7...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 7 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 08</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 8 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 8...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 8 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 08</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 8 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 8...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 8 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 09</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 9 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 9...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 9 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 09</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 9 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 9...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 9 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
+        </div>
 
-<div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
-<span class="badge">BLOG 10</span>
-<h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 10 - Alison Free Learning 2026 Deep Dive</h3>
-<p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 10...</p>
-<span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
-<div class="blog-full">Full 2000+ word guide 10 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
+        <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
+          <span class="badge">BLOG 10</span>
+          <h3 style="font-family:Space Grotesk;margin:8px 0;font-size:1.1rem">Guide 10 - Alison Free Learning 2026 Deep Dive</h3>
+          <p style="color:var(--dim);font-size:0.88rem;margin:0">Preview for guide 10...</p>
+          <span style="color:#22D3EE;font-size:0.85rem;margin-top:10px;display:inline-block">Read 2000+ words →</span>
+          <div class="blog-full">Full 2000+ word guide 10 - Detailed analysis of Alison free courses, CPD accreditation, job market value, offline app, certificate pricing, comparison with Coursera and Udemy, and the best way to use free learning strategically.
 <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="margin-top:14px">Start this course free on Alison →</a>
 </div>
-</div>
-
-</div></div></section>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <section id="newsletter" style="padding:70px 0;background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
 <div class="wrap" style="max-width:640px;text-align:center">
