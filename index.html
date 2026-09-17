@@ -8,24 +8,77 @@
 <link rel="canonical" href="https://realskillset.com/">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0B0F1A;--panel:#121A2B;--panel2:#161E32;--line:rgba(255,255,255,0.08);--text:#E7EAF3;--dim:#8B93A7;--violet:#7C5CFF;--cyan:#22D3EE;--grad:linear-gradient(120deg,var(--violet),var(--cyan));--success:#34D399;--warning:#FBBF24;--danger:#F87171}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6}.wrap{max-width:1160px;margin:0 auto;padding:0 28px}.mono{font-family:JetBrains Mono,monospace}.btn{background:var(--grad);color:#0B0F1A;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-family:Space Grotesk;display:inline-flex;gap:8px;border:none;cursor:pointer;align-items:center;justify-content:center;transition:.2s}.btn:hover{filter:brightness(1.04)}.btn-ghost{background:rgba(255,255,255,0.06);border:1px solid var(--line);color:var(--text);padding:12px 18px;border-radius:10px;text-decoration:none}header{position:sticky;top:0;z-index:40;background:rgba(11,15,26,0.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 0}.blog-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;cursor:pointer;transition:.2s}.blog-card:hover{border-color:var(--violet);background:var(--panel2);transform:translateY(-2px)}.blog-full{display:none;margin-top:14px;color:var(--dim);font-size:0.92rem;line-height:1.8;white-space:pre-wrap;border-top:1px solid var(--line);padding-top:14px}.blog-full.open{display:block}.badge{display:inline-flex;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.25);color:var(--cyan);font-family:JetBrains Mono;font-size:0.7rem;padding:4px 8px;border-radius:6px}
+:root{--bg:#0B0F1A;--panel:#121A2B;--panel2:#161E32;--line:rgba(255,255,255,0.08);--text:#E7EAF3;--dim:#8B93A7;--violet:#7C5CFF;--cyan:#22D3EE;--grad:linear-gradient(120deg,var(--violet),var(--cyan));--success:#34D399;--warning:#FBBF24;--danger:#F87171}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6}.wrap{max-width:1160px;margin:0 auto;padding:0 28px}.mono{font-family:JetBrains Mono,monospace}.btn{background:var(--grad);color:#0B0F1A;font-weight:600;padding:12px 20px;border-radius:10px;text-decoration:none;font-family:Space Grotesk;display:inline-flex;gap:8px;border:none;cursor:pointer;align-items:center;justify-content:center;transition:.2s}.btn:hover{filter:brightness(1.04)}.btn-ghost{background:rgba(255,255,255,0.06);border:1px solid var(--line);color:var(--text);padding:12px 18px;border-radius:10px;text-decoration:none}header{position:sticky;top:0;z-index:40;background:rgba(11,15,26,0.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 0}.blog-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;cursor:pointer;transition:.2s}.blog-card:hover{border-color:var(--violet);background:var(--panel2);transform:translateY(-2px)}.blog-full{display:none;margin-top:14px;color:var(--dim);font-size:0.92rem;line-height:1.8;white-space:pre-wrap;border-top:1px solid var(--line);padding-top:14px}.blog-full.open{display:block}.badge{display:inline-flex;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.25);color:var(--cyan);font-family:JetBrains Mono;font-size:0.7rem;padding:4px 8px;border-radius:6px}
+.hero{position:relative;isolation:isolate;min-height:760px;display:flex;align-items:center;overflow:hidden;background:#090d17}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:saturate(1.1) contrast(1.12) brightness(.72)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,10,18,0.9) 0%,rgba(6,10,18,0.72) 28%,rgba(6,10,18,0.28) 55%,rgba(6,10,18,0.7) 100%),linear-gradient(180deg,rgba(6,10,18,0.4),rgba(6,10,18,0.75));}
+.hero-inner{position:relative;z-index:1;padding-top:90px;padding-bottom:90px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center}
+.hero-copy{max-width:620px}
+.eyebrow{display:inline-block;color:#22D3EE;font-size:0.75rem;letter-spacing:0.18em;font-family:JetBrains Mono,monospace;margin-bottom:18px;text-transform:uppercase}
+h1{font-family:Space Grotesk,sans-serif;font-size:clamp(2.8rem,5vw,5rem);line-height:0.96;letter-spacing:-0.06em;margin:0 0 18px}.hero-copy p{margin:0 0 24px;color:rgba(231,234,243,0.8);font-size:1.08rem;max-width:56ch}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}.hero-stats{display:flex;gap:28px;flex-wrap:wrap}.stat-label{display:block;color:var(--dim);font-size:0.7rem;letter-spacing:0.12em;font-family:JetBrains Mono,monospace;margin-bottom:6px}.stat-value{font-family:Space Grotesk,sans-serif;font-size:1.7rem;letter-spacing:-0.05em}.hero-panel{justify-self:end;width:min(100%, 470px);background:rgba(12,16,26,0.5);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(10px);border-radius:24px;padding:22px;box-shadow:0 24px 80px rgba(0,0,0,0.42)}
+.panel-tag{display:inline-flex;padding:6px 10px;border-radius:999px;background:rgba(34,211,238,0.12);border:1px solid rgba(34,211,238,0.25);color:#a5f3fc;font-size:0.7rem;letter-spacing:0.12em;font-family:JetBrains Mono,monospace;text-transform:uppercase}
+.hero-panel h2{font-family:Space Grotesk,sans-serif;font-size:1.8rem;letter-spacing:-0.04em;margin:18px 0 10px}.hero-panel p{margin:0;color:rgba(231,234,243,0.75);line-height:1.7}.small-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}.small-list li{display:flex;gap:12px;align-items:flex-start;color:rgba(231,234,243,0.85)}.dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(120deg,var(--cyan),var(--violet));margin-top:7px;box-shadow:0 0 16px rgba(124,92,255,0.75)}
+@media (max-width: 900px){.hero{min-height:unset}.hero-inner{grid-template-columns:1fr;padding-top:70px;padding-bottom:70px}.hero-panel{justify-self:start}.}
+@media (max-width: 560px){.hero-copy h1{font-size:2.8rem}.hero-panel{padding:18px}.hero-stats{gap:18px}.}
 </style>
 </head>
 <body>
-<header><nav class="wrap" style="display:flex;justify-content:space-between;align-items:center"><a href="#" style="color:var(--text);font-family:Space Grotesk;font-weight:700;text-decoration:none;letter-spacing:-0.03em">realskillset</a><div style="display:flex;gap:18px;align-items:center"><a href="#blogs" style="color:var(--dim);text-decoration:none;font-size:0.9rem">Guides</a><a href="#newsletter" style="color:var(--dim);text-decoration:none;font-size:0.9rem">Newsletter</a><a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="padding:10px 14px;font-size:0.82rem">Start free</a></div></nav></header>
+<header>
+  <nav class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <a href="#" style="color:var(--text);font-family:Space Grotesk;font-weight:700;text-decoration:none;letter-spacing:-0.03em">realskillset</a>
+    <div style="display:flex;gap:18px;align-items:center">
+      <a href="#blogs" style="color:var(--dim);text-decoration:none;font-size:0.9rem">Guides</a>
+      <a href="#newsletter" style="color:var(--dim);text-decoration:none;font-size:0.9rem">Newsletter</a>
+      <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn" style="padding:10px 14px;font-size:0.82rem">Start free</a>
+    </div>
+  </nav>
+</header>
 <main>
-<section class="wrap" style="padding:80px 0 50px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center">
-<div><div class="mono" style="color:#22D3EE;font-size:0.75rem;margin-bottom:16px">6,000+ COURSES · $0 TUITION · BOSTON, MA · AMERICAN EAGLE</div><h1 style="font-family:Space Grotesk;font-size:clamp(2.5rem,5vw,4.4rem);line-height:0.96;letter-spacing:-0.06em;margin:0 0 18px">Learn smarter. Free courses, real certificates.</h1><p style="color:var(--dim);font-size:1.05rem;max-width:56ch;margin:0 0 24px">RealSkillSet helps you compare free online course platforms, find the best certificate value, and avoid wasting time on hype. Built for people who want skill growth without a tuition bill.</p><div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px"><a href="#blogs" class="btn">Explore guides →</a><a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn-ghost">Free courses</a></div><div style="display:flex;gap:22px;flex-wrap:wrap;align-items:center"><div><div class="mono" style="font-size:0.72rem;color:var(--dim);letter-spacing:0.08em">COURSES</div><div style="font-family:Space Grotesk;font-size:1.6rem;margin-top:6px">6,000+</div></div><div><div class="mono" style="font-size:0.72rem;color:var(--dim);letter-spacing:0.08em">CERTS</div><div style="font-family:Space Grotesk;font-size:1.6rem;margin-top:6px">$0-$50</div></div><div><div class="mono" style="font-size:0.72rem;color:var(--dim);letter-spacing:0.08em">CPD</div><div style="font-family:Space Grotesk;font-size:1.6rem;margin-top:6px">UK/US</div></div></div></div>
-<div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.09);box-shadow:0 20px 60px rgba(0,0,0,0.5);background:#0E1422">
-<img src="814317386_972237885907097_563921316684491744_n.jpg" alt="RealSkillSet hero image" style="width:100%;height:420px;object-fit:cover;display:block">
-<div style="position:absolute;bottom:0;left:0;right:0;padding:18px;background:linear-gradient(transparent, rgba(0,0,0,0.85));display:flex;justify-content:space-between;align-items:end">
-<div><div class="mono" style="color:#22D3EE;font-size:0.7rem">AMERICAN EAGLE · BOSTON, MASSACHUSETTS</div><div style="font-family:Space Grotesk;font-weight:600;font-size:1rem;margin-top:4px;color:var(--text)">Real skills. Real value. Zero fluff.</div></div>
-<span style="display:inline-flex;background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.3);color:#34D399;font-family:JetBrains Mono;font-size:0.7rem;padding:4px 8px;border-radius:6px">LIVE</span>
-</div>
-<div style="position:absolute;top:12px;left:12px;display:flex;gap:6px;align-items:center"><span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);display:inline-block"></span><span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);display:inline-block"></span><span style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.4);display:inline-block"></span></div>
-</div>
-</section>
-<section id="blogs" style="padding:50px 0"><div class="wrap"><h2 style="font-family:Space Grotesk;font-size:1.8rem">10 guides — clean cards, 2000+ words inside</h2><p style="color:var(--dim)">Clean comparisons, practical savings, and no-nonsense advice for free learning in 2026.</p>
+  <section class="hero">
+    <div class="hero-media">
+      <img src="814317386_972237885907097_563921316684491744_n.jpg" alt="RealSkillSet hero image">
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">6,000+ courses • $0 tuition</span>
+        <h1>Learn smarter. <br>Free courses, real certificates.</h1>
+        <p>RealSkillSet helps you compare free online course platforms, find the best certificate value, and avoid wasting time on hype. Built for people who want skill growth without a tuition bill.</p>
+        <div class="hero-actions">
+          <a href="#blogs" class="btn">Explore guides →</a>
+          <a href="https://www.awin1.com/cread.php?awinmid=120101&awinaffid=3067297" target="_blank" rel="sponsored" class="btn-ghost">Free courses</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat-label">Courses</span>
+            <div class="stat-value">6,000+</div>
+          </div>
+          <div>
+            <span class="stat-label">Certs</span>
+            <div class="stat-value">$0–$50</div>
+          </div>
+          <div>
+            <span class="stat-label">CPD</span>
+            <div class="stat-value">UK/US</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <span class="panel-tag">Boston • 2026</span>
+        <h2>Real skills. Real value. Zero fluff.</h2>
+        <p>Compare legit learning platforms, track certificate ROI, and build your next move without paying university prices.</p>
+        <ul class="small-list">
+          <li><span class="dot"></span><span>Free, no-card access to major course libraries</span></li>
+          <li><span class="dot"></span><span>Smart comparisons across Alison, Coursera, Udemy, and edX</span></li>
+          <li><span class="dot"></span><span>Practical career advice built for job seekers and career switchers</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="blogs" style="padding:50px 0"><div class="wrap"><h2 style="font-family:Space Grotesk;font-size:1.8rem">10 guides — clean cards, 2000+ words inside</h2><p style="color:var(--dim)">Clean comparisons, practical savings, and no-nonsense advice for free learning in 2026.</p>
 
 <div class="blog-card" onclick="this.querySelector('.blog-full').classList.toggle('open')">
 <span class="badge">BLOG 01 · COST</span>
@@ -66,7 +119,7 @@ Learning experience: Alison simple text video quiz, low bandwidth, offline downl
 
 Flexibility: Alison fully self-paced no deadlines, start Sunday finish Tuesday. Coursera suggested deadlines peer assignments wait for others. edX follows semester fixed start dates. Udemy self-paced but quality inconsistent.
 
-Hybrid strategy: Use Alison foundational IT basics, business communication, health safety, English grammar. CPD free, quickly build 4-5 certs $100-150 total. Then one prestige credential core field. 
+Hybrid strategy: Use Alison foundational IT basics, business communication, health safety, English grammar. CPD free, quickly build 4-5 certs $100-150 total. Then one prestige credential core field.
 
 For Africa, South Asia, Southeast Asia, Alison offline app decisive advantage. Coursera edX apps require constant streaming more data. Alison download full diploma at home WiFi study bus without data.
 
@@ -273,8 +326,7 @@ form.addEventListener('submit', async (e)=>{
   const email=emailField.value.trim().toLowerCase();
   if(document.getElementById('company-field').value){msg.innerHTML='<span class="mono" style="color:#34D399">Thanks! Subscribed.</span>';form.reset();return;}
   if(!email || !/^\S+@\S+\.\S+$/.test(email)){msg.innerHTML='<span class="mono" style="color:#F87171">Valid email required.</span>';return;}
-  try{const s=localStorage.getItem('realskillset_subscribers');const arr=s?JSON.parse(s):[];if(arr.some(x=>x.email.toLowerCase()===email)){msg.innerHTML='<span class="mono" style="color:#FBBF24">Already subscribed.</span>';return;}}
-  catch{}
+  try{const s=localStorage.getItem('realskillset_subscribers');const arr=s?JSON.parse(s):[];if(arr.some(x=>x.email.toLowerCase()===email)){msg.innerHTML='<span class="mono" style="color:#FBBF24">Already subscribed.</span>';return;}}catch{}
   msg.innerHTML='<span class="mono" style="color:var(--dim)">Subscribing...</span>';
   try{await fetch('https://formspree.io/f/mexample',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email})})}catch{}
   try{const s=localStorage.getItem('realskillset_subscribers');let arr=s?JSON.parse(s):[];arr.push({email,date:new Date().toISOString()});localStorage.setItem('realskillset_subscribers',JSON.stringify(arr));}catch{}
