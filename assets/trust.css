@@ -1,1 +1,26 @@
+body{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 24px;
+    font-family:Inter,Arial,sans-serif;
+    line-height:1.8;
+    color:#1b1426;
+}
 
+h1{
+    font-size:48px;
+    color:#ff5a7a;
+}
+
+h2{
+    margin-top:32px;
+    color:#5b2a86;
+}
+
+a{
+    color:#5b2a86;
+}
+
+p,li{
+    color:#4a3f58;
+}
