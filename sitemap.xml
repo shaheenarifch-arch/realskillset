@@ -1,23 +1,29 @@
-<url>
-<loc>https://realskillset.com/about/</loc>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://realskillset.com/contact/</loc>
-</url>
+  <url>
+    <loc>https://realskillset.com/about/</loc>
+  </url>
 
-<url>
-<loc>https://realskillset.com/faq/</loc>
-</url>
+  <url>
+    <loc>https://realskillset.com/contact/</loc>
+  </url>
 
-<url>
-<loc>https://realskillset.com/privacy/</loc>
-</url>
+  <url>
+    <loc>https://realskillset.com/faq/</loc>
+  </url>
 
-<url>
-<loc>https://realskillset.com/terms/</loc>
-</url>
+  <url>
+    <loc>https://realskillset.com/privacy/</loc>
+  </url>
 
-<url>
-<loc>https://realskillset.com/affiliate-disclosure/</loc>
-</url>
+  <url>
+    <loc>https://realskillset.com/terms/</loc>
+  </url>
+
+  <url>
+    <loc>https://realskillset.com/affiliate-disclosure/</loc>
+  </url>
+
+</urlset>
