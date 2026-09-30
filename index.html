@@ -95,7 +95,13 @@ footer .brand{color:#fff}footer .foot-h{color:rgba(255,255,255,.55)}
 @media(max-width:720px){header{top:8px}.navlinks>a:not(.btn){display:none}.nav{padding:8px 8px 8px 14px}.hero{min-height:auto;padding:145px 0 70px}h1{font-size:clamp(3rem,15vw,4.8rem)}.hero-panel{width:100%;display:block}.hero-stats,.categories,.guide-grid,.learning-path,.foot-grid,.premium-footer{grid-template-columns:1fr}.dark{margin-inline:7px;border-radius:28px}.block{padding:65px 0}.trust{grid-template-columns:1fr;padding:24px}#newsletter-form{flex-direction:column;border-radius:20px}#newsletter-form .btn{width:100%}.newsletter-benefits{grid-template-columns:1fr}.course-arrow{display:none}.hero-cta-grid{gap:12px}.footer-cta{align-items:flex-start;flex-direction:column}.footer-cta-actions{align-items:flex-start}.footer-button{white-space:normal;text-align:center}.social-note{max-width:280px}.bottom{flex-direction:column}.hero-search{max-width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style id="hero-merge">
+.hero{isolation:isolate;overflow:hidden}
+.hero::before{content:"";position:absolute;top:0;right:0;left:32%;height:min(100%,900px);z-index:-2;background:url('/hero-learning-studio.webp') center center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#fff 0%,#fff 32%,rgba(255,255,255,.9) 40%,rgba(255,255,255,.45) 52%,rgba(255,255,255,0) 66%),linear-gradient(0deg,#fff 0%,#fff calc(100% - 900px),rgba(255,255,255,0) calc(100% - 640px))}
+@media(min-width:981px){.hero .hero-grid{grid-template-columns:minmax(0,1fr)}.hero .hero-panel{display:none}.hero .hero-copy{max-width:760px}}
+@media(max-width:980px){.hero::before{left:0;background-size:cover;background-position:62% top;height:520px;bottom:auto}.hero::after{background:linear-gradient(0deg,var(--paper) 0%,var(--paper) calc(100% - 520px),rgba(255,255,255,.85) calc(100% - 330px),rgba(255,255,255,.55) 100%)}.hero .hero-panel{display:none}}
+</style></head>
 <body>
 <header><nav aria-label="Main" class="nav"><a class="brand" href="/"><span>Real</span><span class="brand-mark">S</span><span>killSet</span></a><div class="navlinks"><a href="#categories">Categories</a><a href="#future-skills">Future skills</a><a href="#guides">Guides</a><a href="#languages">Languages</a><a href="#faq">FAQ</a><a class="btn btn-primary" href="https://www.awin1.com/cread.php?awinmid=120101&amp;awinaffid=3067297" rel="sponsored nofollow noopener noreferrer" target="_blank">Explore courses <span class="arr">&rarr;</span></a></div></nav></header>
 <main>
