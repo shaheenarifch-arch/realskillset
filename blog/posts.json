@@ -40,5 +40,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 10.0
+  },
+  {
+    "keyword": "Online courses complete guide: choosing courses that advance your career",
+    "title": "Online Courses Complete Guide: Choosing Courses That Advance Your Career",
+    "description": "Online courses complete guide: choosing courses that advance your career covers how to pick courses, avoid mistakes, and build real career skills.",
+    "file": "online-courses-complete-guide-choosing-courses-that-advance-your-career.html",
+    "date": "2026-10-31",
+    "archetype": "authority_guide",
+    "archetype_confidence": 0.9,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 8.81
   }
 ]
